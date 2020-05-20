@@ -33,6 +33,7 @@ const API = "https://yts.mx/api/v2/";
       element.setAttribute(attribute, attributes[attribute]);
     }
   }
+  /* ↓ Templete literals ↓ */
   //funcion para agregar los datos de la pelicula buscada a un template html
   function featuringTemplate(infoPeli) {
     return `<div class="featuring">
@@ -47,6 +48,7 @@ const API = "https://yts.mx/api/v2/";
     
     `;
   }
+  /* ↑ Templete literals ↑ */
 
   function createTemplate(HTMLString) {
     const html = document.implementation.createHTMLDocument();
@@ -121,6 +123,7 @@ const API = "https://yts.mx/api/v2/";
     $modal.style.animation = "modalOut .8s forwards";
   }
   //generador de template HTML con la info
+  /* ↓ Templete literals ↓ */
   function videoItemTemplate(movie, category) {
     return ` <div class="primaryPlaylistItem" data-id=${movie.id} data-category=${category}>
   <div class="primaryPlaylistItem-image ">
@@ -131,6 +134,7 @@ const API = "https://yts.mx/api/v2/";
   </h4>
 </div>  `;
   }
+  /*  Templete literals  */
 
   $form.addEventListener("submit", async (event) => {
     //evitemos que se recargue la pagina en cada busqueda
